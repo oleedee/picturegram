@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script src="/script.js" defer></script>
+    <title>Picturegram | Share Today</title>
+</head>
+
+<body>
+    <main class="app-content">
+        <nav class="sidebar">
+            <section class="sidebar-top">
+                <button> 
+                    <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg> <div>Home</div>
+                </button>
+                <button> 
+                    <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="10" r="3"/>
+                    <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/>
+                    </svg> <div>Search</div>
+                </button>
+                <button> 
+                    <svg class="icon" viewBox="0 0 24 24">
+                    <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                    </svg> <div>Explore</div></button>
+                <button> 
+                    <svg class="icon" viewBox="0 0 24 24">
+                    <rect x="2" y="6" width="20" height="12" rx="2" ry="2"/>
+                    <polygon points="10,9 15,12 10,15"/>
+                    </svg>
+                    <div>Videos</div></button>
+                <button> 
+                    <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                    </svg> 
+                    <div>Messages</div></button>
+                <button> 
+                    <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg> <div>Notifications</div>
+                    </button>
+                <button> 
+                        <svg class="icon" viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="12" y1="8" x2="12" y2="16"/>
+                        <line x1="8" y1="12" x2="16" y2="12"/>
+                        </svg>
+                    <div>Create</div></button>
+                <button>                     
+                    <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="10" r="3"/>
+                    <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/>
+                    </svg> <div>Profile</div></button>
+            </section>
+
+            <section class="sidebar-bottom">
+                <button> 
+                    <svg class="icon" viewBox="0 0 24 24">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                    </svg>
+                <div>AI</div></button>
+
+                <button> <svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="1"/>
+                <circle cx="19" cy="12" r="1"/>
+                <circle cx="5" cy="12" r="1"/>
+                </svg> <div>More</div></button>
+            </section>
+        </nav>
+
+        <div class="scrollable">
+
+            <article class="feed">  
+                    <section class="story-container" data-carousel>
+                        <ul class="stories" data-stories>
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 1</div>
+                            </li>
+
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 2</div>
+                            </li>
+
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 3</div>
+                            </li>  
+
+
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 4</div>
+                            </li>
+
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 5</div>
+                            </li>
+
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 6</div>
+                            </li> 
+
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 7</div>
+                            </li>
+
+                            <li class="story">
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 8</div>
+                            </li> 
+
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 9</div>
+                            </li>
+
+                            <li class="story" data-active>
+                                <div class="story-img-container">
+                                    <img class="story-img" src="assets/img1.jpg">
+                                </div>
+                                <div class="story-poster">User 10</div>
+                            </li>
+                        </ul> 
+                        <button class="story-button story-button--left" data-stories-button="left">
+                                <svg width="20" height="20" viewBox="5 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                   <g id="left-arrow">
+                                   <path d="M30 15 L20 25 L30 35" stroke="rgba(0,0,0,.5)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>        
+                        </button>
+
+
+                        <button class="story-button story-button--right" data-stories-button="right">
+                                <svg width="20" height="20" viewBox="5 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="right-arrow">
+                                    <path d="M20 15 L30 25 L20 35" stroke="rgba(0,0,0,.5)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                        </button>        
+                    </section>
+
+                <section class="timeline">
+                    <div class="post">
+                        <div class="post-header"> 
+                            <img src="assets/img2.jpg" class="post-icon">
+                            <div>
+                                <span class="post-id">oleedee</span>
+                                <span>•</span>
+                                <span class="post-time">2h</span>
+                            </div>
+                            <button class="post-settings-button">
+                                <svg class="post-settings" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="1"/>
+                                    <circle cx="19" cy="12" r="1"/>
+                                    <circle cx="5" cy="12" r="1"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="post-images-container">
+                            <ul class="post-images">
+                                <img class="post-image" src="/assets/img6.jpg">
+                                <img class="post-image" src="/assets/img7.jpg">
+                                <img class="post-image" src="/assets/img8.jpg">
+                            </ul>
+                            <button class="post-traverse-button post-traverse-button--left">
+                                <svg width="20" height="20" viewBox="5 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                   <g id="left-arrow">
+                                   <path d="M30 15 L20 25 L30 35" stroke="rgba(0,0,0,.5)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button class="post-traverse-button post-traverse-button--right">
+                                <svg width="20" height="20" viewBox="5 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="right-arrow">
+                                    <path d="M20 15 L30 25 L20 35" stroke="rgba(0,0,0,.5)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="post-interactions">
+                            <div class="post-interactions-start">
+                                <button class="post-interaction-button">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+
+                                <button class="post-interaction-button">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                    </svg>
+                                </button>
+
+                                <button class="post-interaction-button">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16,6 12,2 8,6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+
+                            <div class="post-interactions-end">
+                                <button class="post-interaction-button">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="post-likes">
+                            <a>17,000 likes</a>
+                        </div>
+
+                        <div class="post-comments">
+                            <a class="post-view-comments">View all 389 comments</a>
+                            <div class="post-add-interaction">
+                                <div class="post-add-comment">Add a comment...</div>
+                                <div class="post-add-emoji">
+                                    <button class="post-interaction-button">
+                                        <svg class="icon-small" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="post">
+                        <div class="post-header"> 
+                            <img src="assets/img2.jpg" class="post-icon">
+                            <div>
+                                <span class="post-id">oleedee</span>
+                                <span>•</span>
+                                <span class="post-time">1d</span>
+                            </div>
+                            <button class="post-settings-button">
+                                <svg class="post-settings" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="1"/>
+                                    <circle cx="19" cy="12" r="1"/>
+                                    <circle cx="5" cy="12" r="1"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="post-images-container">
+                            <ul class="post-images">
+                                <img class="post-image" src="/assets/img4.jpg">
+                            </ul>
+                            <button class="post-traverse-button post-traverse-button--left">
+                                <svg width="20" height="20" viewBox="5 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                   <g id="left-arrow">
+                                   <path d="M30 15 L20 25 L30 35" stroke="rgba(0,0,0,.5)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <button class="post-traverse-button post-traverse-button--right">
+                                <svg width="20" height="20" viewBox="5 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="right-arrow">
+                                    <path d="M20 15 L30 25 L20 35" stroke="rgba(0,0,0,.5)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="post-interactions">
+                            <div class="post-interactions-start">
+                                <button class="post-interaction-button">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+
+                                <button class="post-interaction-button">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                    </svg>
+                                </button>
+
+                                <button class="post-interaction-button">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16,6 12,2 8,6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+
+                            <div class="post-interactions-end">
+                                <button class="post-interaction-button">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="post-likes">
+                            <a>2,000 likes</a>
+                        </div>
+
+                        <div class="post-comments">
+                            <a class="post-view-comments">View all 389 comments</a>
+                            <div class="post-add-interaction">
+                                <div class="post-add-comment">Add a comment...</div>
+                                <div class="post-add-emoji">
+                                    <button class="post-interaction-button">
+                                        <svg class="icon-small" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    
+                </section>
+            </article>
+
+            <article class="suggestions">
+                <div class="suggestions-user-profile"> 
+                    <img src="assets/img2.jpg" class="suggestions-user-image">
+                    <span class="suggestions-user-name">oleedee</span>
+                    <a style="font-size: 11px;">Switch</a>
+                </div>
+
+                <section class="suggested-for-you">
+                    <div class="suggested-header">
+                        <span class="suggested-for-you-text">Suggested For You</span>
+                        <a style="font-size: 11px;">See All</a>
+                    </div>
+                    
+                    <ul class="suggested-accounts">
+                        <div class="suggested-account">
+                            <img src="assets/img3.png" class="suggested-account-pfp">
+                            <div class="suggested-account-info">
+                                <span>HTML</span>
+                                <span class="suggested-account-reason">Suggested for you</span>
+                            </div>
+                            <a class="suggested-account-follow">Follow</a>
+                        </div>
+
+                        <div class="suggested-account">
+                            <img src="assets/img4.jpg" class="suggested-account-pfp">
+                            <div class="suggested-account-info">
+                                <span>CSS</span>
+                                <span class="suggested-account-reason">Suggested for you</span>
+                            </div>
+                            <a class="suggested-account-follow">Follow</a>
+                        </div>
+                    </ul>
+
+                    <ul class="tos">
+                        <a>About</a>
+                        <span>•</span>
+                        <a>Help</a>
+                        <span>•</span>
+                        <a>Press</a>
+                        <span>•</span>
+                        <a>API</a>
+                        <span>•</span>
+                        <a>Jobs</a>
+                        <span>•</span>
+                        <a>Privacy</a>
+                        <span>•</span>
+                        <a>Terms</a>
+                        <span>•</span>
+                        <a>Locations</a>
+                        <span>•</span>
+                        <a>Language</a>
+                        <span>•</span>
+                        <a>Verification</a>
+                    </ul>
+
+                    <span class="copyright">
+                        @ 2025 Picturegram
+                    </span>
+                </section>
+
+                <ul class="tos">
+
+                </ul>
+            </article>
+
+        </div>
+    </main>
+
+</body>
