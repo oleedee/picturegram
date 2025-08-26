@@ -14,7 +14,6 @@ const maxVisibleStories = Math.ceil(storyContainer.offsetWidth / storySize);
 const updateButtons = () => {
   const maxIndex = Math.max(0, stories.length - maxVisibleStories);
 
-  console.log(currentIndex)
 
   if(currentIndex <= 0) {
     leftBtn.style.display = "none"
@@ -32,7 +31,6 @@ const updateButtons = () => {
 
 const handleScroll = () => {
   const scrollAmount = currentIndex * storySize
-  console.log(scrollAmount)
   storyContainer.scrollTo({
     left: scrollAmount,
     behavior: "smooth"
@@ -59,6 +57,7 @@ const handlePostScroll = (container) => {
   const carousel = container.querySelector(".post-images");
   const leftBtn = container.querySelector(".post-traverse-button--left");
   const rightBtn = container.querySelector(".post-traverse-button--right");
+  const postPreviews = container.querySelector(".post-image-previews");
 
   const imgWidth = carousel.offsetWidth;
   const imgCount = carousel.querySelectorAll(".post-image").length - 1;
@@ -67,7 +66,6 @@ const handlePostScroll = (container) => {
 
 
   const updateButtons = () => {
-    console.log(currentIndex)
 
     if(currentIndex <= 0) {
       leftBtn.style.display = "none"
@@ -88,6 +86,7 @@ const handlePostScroll = (container) => {
       behavior: "smooth"
     })
     updateButtons();
+    updatePreviewHighlight();
                           
   }
 
@@ -101,9 +100,32 @@ const handlePostScroll = (container) => {
     handleScroll();
   })
 
+  const updatePreviewHighlight = () => {
+    const previews = postPreviews.querySelectorAll(".post-image-preview-button");
+    console.log(previews)
+    previews.forEach((preview, index) => {
+      console.log(index)
+      if(index == currentIndex) {
+        preview.classList.add("selected")
+      } else {
+        preview.classList.remove("selected")
+      }
+    })
+  }
+
+  const updatePreviews = () => {
+    if (imgCount <= 0) return;
+    for (i = 0; i <= imgCount; i++) {
+      const preview = `<div class="post-image-preview-button"></div>`;
+      postPreviews.insertAdjacentHTML('beforeend', preview);
+    }
+
+    updatePreviewHighlight();
+  }
+
+  updatePreviews();
   updateButtons();
 }
-
 
 document.querySelectorAll('[data-carousel]').forEach(handleStoryScroll)
 document.querySelectorAll(".post-images-container").forEach(handlePostScroll);

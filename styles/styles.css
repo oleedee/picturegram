@@ -224,6 +224,30 @@ html, body {
     object-fit: cover;
 }
 
+.post-image-previews {
+    position: absolute;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    top: 95%;
+}
+
+.post-image-preview-button {
+    width: 7px;
+    height: 7px;
+    border-radius: 1000px;
+    background-color: rgb(255, 255, 255, .2);
+}
+
+.post-image-preview-button.selected {
+    width: 7px;
+    height: 7px;
+    border-radius: 1000px;
+    background-color: rgb(255, 255, 255, .95);
+}
+
 .post-traverse-button {
     width: 30px;
     height: 30px;
@@ -447,8 +471,6 @@ html, body {
     font-size: 10px;
     color: rgb(170, 170, 170);  
 }
-
-
 
 @media (max-width: 1270px) {
     .app-content {
